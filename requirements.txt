@@ -1,0 +1,18 @@
+# Core
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.23.0
+matplotlib>=3.7.0
+pillow>=9.4.0
+
+# Data processing
+h5py>=3.8.0
+scikit-learn>=1.2.0
+tqdm>=4.65.0
+
+# Optional (pour visualisation avancée)
+tensorboard>=2.12.0
+seaborn>=0.12.0
+
+# Gestion des dépendances
+protobuf==3.20.*  # Résolution des conflits potentiels

@@ -1,0 +1,28 @@
+# Ignorer l'environnement virtuel
+venv/
+
+# Data 
+Data/
+
+# Ignorer les fichiers Python compilés
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorer les fichiers de données (par exemple, .csv, .h5, .fits)
+*.csv
+*.h5
+*.fits
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers générés par IDE
+.vscode/
+.idea/
+
+# Ignorer les fichiers systèmes
+.DS_Store
+
+# DNL from scratch
+DNL
