@@ -17,11 +17,12 @@ def main():
 
         # 3. Entraînement
         trainer = Trainer(model, train_loader, val_loader)
-        trainer.train(epochs=3)
+        trainer.train(epochs=10)
         print("3 : Entraînement terminé")
 
         # 4. Visualisation
         trainer.visualize_predictions()
+        trainer.plot_metrics()
         print("4 : Visualisation terminée")
 
     except Exception as e:

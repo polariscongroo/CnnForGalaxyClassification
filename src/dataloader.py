@@ -25,7 +25,7 @@ class Dataloader :
         return images, labels.astype(np.int64)
     
 
-    def get_dataloaders(self, test_size=0.2, batch_size=32):
+    def get_dataloaders(self, test_size=0.8, batch_size=32):
         """Crée les DataLoaders pour l'entraînement"""
         images, labels = self.load_data()
         dataset = Dataset(images, labels, self.transform)
