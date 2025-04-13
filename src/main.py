@@ -17,7 +17,7 @@ def main():
 
         # 3. Entraînement
         trainer = Trainer(model, train_loader, val_loader)
-        trainer.train(epochs=10)
+        trainer.train(epochs=15)
         print("3 : Entraînement terminé")
 
         # 4. Visualisation
