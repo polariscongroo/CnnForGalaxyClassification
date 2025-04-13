@@ -32,6 +32,10 @@ The **Galaxy10 DECaLS** dataset is a curated subset of galaxies from the **Dark 
 
 ## 🧑‍💻 Setup
 
+```bash
+git clone https://github.com/polariscongroo/CnnForGalaxyClassification.git
+```
+
 ### Linux/Mac
 ```bash
 python -m venv venv
@@ -48,40 +52,45 @@ venv\Scripts\activate
 pip install --upgrade -r requirements.txt
 ```
 
+### Link for data
+https://astronn.readthedocs.io/en/latest/galaxy10.html  
+Place the .h5 in a directory titled "data" at the root of your project or modify the path to data in the main.py file.
+
+
 ### 🔣 Methodology
-Scientific Exploration
-🔭 Understanding galaxy morphology and how it relates to formation and evolution (e.g., elliptical vs spiral, mergers).
-📊 Studying physical parameters (e.g., color index, size, brightness) associated with morphological classes.
+Scientific Exploration  
+🔭 Understanding galaxy morphology and how it relates to formation and evolution (e.g., elliptical vs spiral, mergers).  
+📊 Studying physical parameters (e.g., color index, size, brightness) associated with morphological classes.  
 
 #### Dataset
 📦 Galaxy10 DECaLS:
-Available at Galaxy10 - AstroNN.
-Images: RGB 69x69 pixel thumbnails of galaxies.
-Classes: 10 morphological types including smooth, spiral, edge-on, merging, barred, and artifact.
+Available at Galaxy10 - AstroNN.  
+Images: RGB 69x69 pixel thumbnails of galaxies.  
+Classes: 10 morphological types including smooth, spiral, edge-on, merging, barred, and artifact.  
 
 #### Preprocessing
-🧹 Normalize pixel values between 0 and 1.
-📁 Split into training, validation, and test sets.
-🔀 Data augmentation: Rotation, zoom, flipping for robustness.
+🧹 Normalize pixel values between 0 and 1.  
+📁 Split into training, validation, and test sets.  
+🔀 Data augmentation: Rotation, zoom, flipping for robustness.  
 
 #### Model Development
 🧠 CNN Architecture:
 
 #### Input: 69x69x3 RGB image
-Convolutional layers + ReLU + MaxPooling
-Dropout for regularization
-Dense layers + Softmax output (10 classes)
-📈 Metrics: Accuracy, confusion matrix, precision/recall per class.
+Convolutional layers + ReLU + MaxPooling  
+Dropout for regularization  
+Dense layers + Softmax output (10 classes)  
+📈 Metrics: Accuracy, confusion matrix, precision/recall per class.  
 
 #### Model Training
-⚙️ Training the CNN on the Galaxy10 DECaLS dataset.
-📉 Monitoring loss and accuracy per epoch.
-🧪 Evaluation on test data.
+⚙️ Training the CNN on the Galaxy10 DECaLS dataset.  
+📉 Monitoring loss and accuracy per epoch.  
+🧪 Evaluation on test data.  
 
 #### Scientific Contribution
-🔬 Providing a pretrained classifier for galaxy morphology usable by astronomers.
-📁 Contributing to reproducible workflows in astrophysical image classification.
-📚 Exploring misclassified cases to gain insight into ambiguous or transitional morphologies.
+🔬 Providing a pretrained classifier for galaxy morphology usable by astronomers.  
+📁 Contributing to reproducible workflows in astrophysical image classification.  
+📚 Exploring misclassified cases to gain insight into ambiguous or transitional morphologies.  
 
 ## 📊 Results
 
@@ -89,10 +98,10 @@ Dense layers + Softmax output (10 classes)
 
 After training our CNN architecture for 25 epochs with early stopping, we achieved the following performance on the test set:
 
-Accuracy: 63,5%
-Loss (categorical cross-entropy): 0.73
-Validation Accuracy (best epoch): 68.0%
-Training Time: ~6 minutes on GPU
+Accuracy: 63,5%  
+Loss (categorical cross-entropy): 0.73  
+Validation Accuracy (best epoch): 68.0%  
+Training Time: ~6 minutes on GPU  
 
 🧠 Misclassification Examples
 
